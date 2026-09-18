@@ -55,7 +55,7 @@ h1{font-size:clamp(44px,7vw,78px);line-height:.98;margin:18px 0 18px;letter-spac
 <div class="pricegrid">
 <div class="price"><div class="eur">93 €</div><h3>Un fauteuil roulant</h3><p>Un équipement de mobilité destiné à une personne qui ne peut pas en assumer le coût.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Participer →</a></div>
 <div class="price"><div class="eur">82 €</div><h3>Une grande machine à coudre</h3><p>Un outil pouvant contribuer à l’autonomie et à une activité génératrice de revenus.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Participer →</a></div>
-<div class="price"><div class="eur">50 € · 1 personne<br>100 € · 2 personnes<br>150 € · 3 personnes<br>200 € · 4 personnes</div><h3>Panier alimentaire</h3><p>Un panier composé de produits essentiels : farine, riz, sucre, huile, thé, lentilles et épices, pour soutenir une famille dans le besoin.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Soutenir →</a></div>
+<div class="price"><div class="eur">50 € · 1 personne<br>100 € · 2 personnes<br>150 € · 3 personnes<br>200 € · 4 personnes</div><h3>Panier alimentaire</h3><p>Un panier composé de produits essentiels : farine, riz, sucre, huile, thé, lentilles et épices, pour soutenir une famille dans le besoin.</p><button id="openHaOverlay">Soutenir →</button></div>
 
 <section class="section" id="food-detail"><span class="eyebrow">Aide alimentaire</span><h2>Des produits essentiels, présentés clairement.</h2><p class="sub">Les compositions peuvent être adaptées aux besoins et aux prix locaux. L’objectif est de privilégier des produits de base utiles au quotidien.</p>
 <div class="cards">
@@ -87,5 +87,17 @@ h1{font-size:clamp(44px,7vw,78px);line-height:.98;margin:18px 0 18px;letter-spac
 <section class="section" id="contact"><div class="contact"><div><span class="eyebrow">Sheryam Foundation</span><h2>Ensemble, transformons la solidarité en actions.</h2><p class="sub">Merci à toutes les personnes qui choisissent de soutenir nos projets et de faire vivre cette initiative.</p><a class="btn btn-red" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">❤️ FAIRE UN DON</a></div>
 <div class="contactbox"><h3>Nous contacter</h3><a href="mailto:sheryamfoundation@gmail.com">✉️ sheryamfoundation@gmail.com</a><a href="https://www.instagram.com/sheryamfondation/" target="_blank">◎ Instagram · Sheryam Foundation</a><a href="https://www.facebook.com/" target="_blank">f Facebook · Sheryam Sheryam</a><p style="margin-top:22px;color:#cfc5cc">Association déclarée · SIREN 109065722 · SIRET 10906572200018<br>9 rue du Président Wilson, 95620 Parmain, France</p></div></div></section>
 
-<footer class="legal"><div class="footergrid"><div><strong>SHERYAM FOUNDATION</strong><br>Solidarité & actions humanitaires au Pakistan.</div><div>© 2026 Sheryam Foundation · Tous droits réservés</div></div></footer>
+<footer <div id="haWidgetModal" style="position: fixed; inset: 0; display: none; align-items: center; justify-content: center; backdrop-filter: blur(15px) brightness(0.5); z-index: 2147483647;">
+    <button id="closeHaWidgetBtn" style="position: absolute; top: .5rem; right: 1.5rem; z-index: 2147483648; background: #EFEFF4; border: none; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+      ✕
+    </button>
+    <div class="modal-content" style="position: relative; width: 100%; max-width: 950px; height: 100%; overflow: hidden;">
+      <iframe
+        id="haWidget"
+        allow="payment 'self' https://paymenthub.helloassopay.com https://helloasso il.com"
+        src="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1/widget?view=overlay"
+        style="width: 100%; height: 100%; border: none; border-radius: 8px;"
+      ></iframe>
+    </div>
+</div>
 </body></html>
