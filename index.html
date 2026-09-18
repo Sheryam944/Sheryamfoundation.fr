@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sheryam Foundation — Chaque don devient une action</title>
+<meta name="description" content="Sheryam Foundation — Actions humanitaires et solidaires au Pakistan. Aide alimentaire, fauteuils roulants, machines à coudre, aide médicale et urgences.">
+<style>
+:root{--ink:#17131b;--cream:#fff9f0;--red:#d61f3d;--orange:#ff7a18;--gold:#ffc83d;--violet:#5b2bbf;--green:#087f5b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+a{text-decoration:none;color:inherit}.top{background:#17131b;color:#fff;text-align:center;padding:9px 15px;font-size:13px;font-weight:700;letter-spacing:.3px}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,249,240,.96);backdrop-filter:blur(10px);border-bottom:1px solid #eadfd1;padding:13px 5%;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:950;letter-spacing:2px;font-size:21px}.brand span{color:var(--red)}.navlinks{display:flex;gap:20px;font-size:14px;font-weight:800}.donate{background:var(--red);color:#fff;padding:12px 19px;border-radius:999px;font-weight:900;box-shadow:0 8px 22px #d61f3d35}
+.hero{padding:58px 6% 52px;background:radial-gradient(circle at 85% 20%,#ffc83d 0,#ffc83d33 22%,transparent 43%),linear-gradient(135deg,#fff9f0 0%,#ffe5c6 46%,#f6d9ff 100%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:#d61f3d18;right:-120px;bottom:-160px}
+.hero-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative;z-index:1}
+.kicker{display:inline-block;background:#17131b;color:#fff;border-radius:999px;padding:8px 13px;font-size:12px;font-weight:900;letter-spacing:1px}
+h1{font-size:clamp(44px,7vw,78px);line-height:.98;margin:18px 0 18px;letter-spacing:-3px}.hero h1 span{color:var(--red)}
+.lead{font-size:19px;max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 23px;border-radius:12px;font-weight:900;display:inline-block}.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 28px #d61f3d42}.btn-dark{background:#17131b;color:#fff}.impact-card{background:#17131b;color:#fff;border-radius:28px;padding:28px;box-shadow:0 24px 60px #17131b30}.impact-card .big{font-size:54px;font-weight:950;color:var(--gold);line-height:1}.impact-card h3{font-size:24px;margin:12px 0}.impact-card p{color:#f5e9dc}.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.mini div{background:#ffffff12;padding:14px;border-radius:15px}.mini b{display:block;font-size:18px;color:#fff}.section{padding:68px 6%;max-width:1200px;margin:auto}.eyebrow{color:var(--red);font-size:12px;font-weight:950;letter-spacing:2px;text-transform:uppercase}h2{font-size:42px;line-height:1.05;margin:9px 0 13px;letter-spacing:-1.5px}.sub{max-width:720px;color:#625b61}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.card{background:#fff;border:1px solid #eee2d5;border-radius:23px;padding:25px;box-shadow:0 12px 30px #17131b0d}.icon{font-size:35px}.card h3{font-size:22px;margin:12px 0 7px}.card p{color:#665e63;margin:0}.card h3 small{font-size:.58em;color:#d61f3d;font-weight:800;letter-spacing:.2px}.card .tag{display:inline-block;margin-top:17px;background:#fff0df;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:900}
+.band{background:linear-gradient(100deg,var(--red),#a81ee1);color:#fff;padding:55px 6%}.band-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:35px;align-items:center}.band h2{margin-top:0}.band p{font-size:18px;color:#fff8f5}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{background:#ffffff18;border:1px solid #ffffff35;border-radius:18px;padding:18px}.step b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}.step strong{font-size:20px}
+.pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.price{background:#17131b;color:#fff;border-radius:23px;padding:25px}.price:nth-child(2){background:var(--violet)}.price:nth-child(3){background:var(--green)}.price .eur{font-size:38px;font-weight:950;color:var(--gold)}.price h3{margin:8px 0}.price p{color:#f4eaf0}.price a{display:inline-block;background:#fff;color:#17131b;padding:10px 14px;border-radius:10px;font-weight:900;margin-top:7px}
+.transparency{background:#fff;border-top:1px solid #eadfd1;border-bottom:1px solid #eadfd1}.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}.proof div{padding:22px;border-radius:20px;background:#fff7ed}.proof b{font-size:18px}.proof p{margin-bottom:0;color:#665e63}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.contactbox{background:#17131b;color:#fff;border-radius:25px;padding:30px}.contactbox a{display:block;margin:12px 0;color:#ffd36a;font-weight:800}.legal{background:#17131b;color:#d9d0d5;padding:32px 6%;font-size:13px}.legal strong{color:#fff}.footergrid{max-width:1200px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+@media(max-width:800px){.navlinks{display:none}.hero-grid,.band-inner,.contact{grid-template-columns:1fr}.cards,.pricegrid,.proof{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}h2{font-size:35px}.hero{padding-top:42px}.lead{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="top">🇵🇰 SHERYAM FOUNDATION · Solidarité & actions humanitaires au Pakistan</div>
+<nav><div class="brand">SHERYAM<span>.</span></div><div class="navlinks"><a href="#actions">Nos actions</a><a href="#impact">Impact</a><a href="#contact">Contact</a></div><a class="donate" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">FAIRE UN DON</a></nav>
+
+<header class="hero">
+<div class="hero-grid">
+<div><span class="kicker">UNE CHANCE. UNE ACTION. UN IMPACT.</span>
+<h1>Votre don peut devenir <span>une vraie action.</span></h1>
+<p class="lead">Sheryam Foundation agit au Pakistan auprès de personnes et de familles en situation de précarité, avec des projets concrets : alimentation, mobilité, autonomie, santé et aide d’urgence.</p>
+<div class="hero-actions"><a class="btn btn-red" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">❤️ JE FAIS UN DON</a><a class="btn btn-dark" href="#actions">Découvrir nos actions ↓</a></div></div>
+<div class="impact-card"><div class="big">1 €</div><h3>Chaque contribution compte.</h3><p>Nous voulons transformer les dons en aides concrètes et partager progressivement les actions réalisées avec nos donateurs.</p><div class="mini"><div><b>🍚 Alimentation</b><small>Rations essentielles</small></div><div><b>♿ Mobilité</b><small>Fauteuils roulants</small></div><div><b>🧵 Autonomie</b><small>Machines à coudre</small></div><div><b>🏥 Santé</b><small>Aide médicale</small></div></div></div>
+</div></header>
+
+<section class="section" id="actions"><span class="eyebrow">Nos actions</span><h2>Des besoins essentiels.<br>Des réponses concrètes.</h2><p class="sub">Nos projets sont pensés pour apporter une aide utile et digne, en fonction des besoins identifiés sur le terrain.</p>
+<div class="cards">
+<div class="card"><div class="icon">🍚</div><h3>Aide alimentaire</h3><p>Distribution de produits alimentaires essentiels aux familles et personnes en situation de précarité.</p><span class="tag">RATIONS · ALIMENTATION</span></div>
+<div class="card"><div class="icon">♿</div><h3>Fauteuils roulants</h3><p>Offrir des fauteuils à des personnes qui ne peuvent pas en financer l’achat, pour favoriser leur mobilité.</p><span class="tag">93 € · MOBILITÉ</span></div>
+<div class="card"><div class="icon">🧵</div><h3>Machines à coudre</h3><p>Soutenir l’autonomie économique de femmes et de jeunes filles grâce à un outil de travail.</p><span class="tag">82 € · AUTONOMIE</span></div>
+<div class="card"><div class="icon">🏥</div><h3>Aide médicale</h3><p>Contribuer à des besoins de santé et à des traitements pour des personnes en situation difficile.</p><span class="tag">SANTÉ</span></div>
+<div class="card"><div class="icon">🌊</div><h3>Urgences & inondations</h3><p>Répondre aux besoins prioritaires lors de situations d’urgence, notamment avec une aide alimentaire.</p><span class="tag">URGENCE</span></div>
+<div class="card"><div class="icon">🤝</div><h3>Actions solidaires</h3><p>Développer des projets adaptés aux besoins locaux et accompagner les personnes les plus vulnérables.</p><span class="tag">SOLIDARITÉ</span></div>
+</div></section>
+
+<section class="band" id="impact"><div class="band-inner"><div><span class="eyebrow" style="color:#ffd36a">Notre engagement</span><h2>Don → Projet → Action → Preuve → Impact</h2><p>Notre ambition est de construire une relation claire avec les donateurs : expliquer les besoins, présenter les projets, montrer les actions réalisées et partager leur impact.</p><a class="btn" style="background:#fff;color:#17131b" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">SOUTENIR SHERYAM</a></div>
+<div class="steps"><div class="step"><b>01</b><strong>Don</strong></div><div class="step"><b>02</b><strong>Projet</strong></div><div class="step"><b>03</b><strong>Action</strong></div><div class="step"><b>04</b><strong>Impact</strong></div></div></div></section>
+
+<section class="section"><span class="eyebrow">Exemples de projets</span><h2>Des objectifs simples à comprendre.</h2><p class="sub">Les montants affichés correspondent aux objectifs actuellement définis pour certains projets. Les besoins et coûts peuvent évoluer selon les situations locales.</p>
+<div class="pricegrid">
+<div class="price"><div class="eur">93 €</div><h3>Un fauteuil roulant</h3><p>Un équipement de mobilité destiné à une personne qui ne peut pas en assumer le coût.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Participer →</a></div>
+<div class="price"><div class="eur">82 €</div><h3>Une grande machine à coudre</h3><p>Un outil pouvant contribuer à l’autonomie et à une activité génératrice de revenus.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Participer →</a></div>
+<div class="price"><div class="eur">EN €</div><h3>Panier alimentaire</h3><p>Un panier pensé autour de produits essentiels : farine, riz, sucre, huile, thé, lentilles et épices. Le montant sera fixé selon le coût réel du panier au moment de la distribution.</p><a href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">Soutenir →</a></div>
+</div></section>
+
+<section class="section" id="food-detail"><span class="eyebrow">Aide alimentaire</span><h2>Des produits essentiels, présentés clairement.</h2><p class="sub">Les compositions peuvent être adaptées aux besoins et aux prix locaux. L’objectif est de privilégier des produits de base utiles au quotidien.</p>
+<div class="cards">
+<div class="card"><div class="icon">🌾</div><h3>Farine <small>— Atta</small></h3><p>Produit de base destiné à la préparation des repas du quotidien.</p></div>
+<div class="card"><div class="icon">🍚</div><h3>Riz <small>— Chawal</small></h3><p>Riz — Chawal conditionné séparément pour faciliter la distribution et le suivi des quantités.</p></div>
+<div class="card"><div class="icon">🥣</div><h3>Lentilles <small>— Daal</small></h3><p>Différents types de dals, conditionnés séparément pour varier les sources alimentaires.</p></div>
+<div class="card"><div class="icon">🫗</div><h3>Huile <small>— Tel</small></h3><p>Huile — Tel alimentaire incluse selon la composition du panier.</p></div>
+<div class="card"><div class="icon">☕</div><h3>Thé <small>— Chai</small></h3><p>Thé — Chai inclus dans les paniers alimentaires selon les besoins définis.</p></div>
+<div class="card"><div class="icon">🧂</div><h3>Sucre <small>— Cheeni</small> & épices</h3><p>Sucre, Curcuma — Haldi et piment rouge — Laal mirch selon la composition prévue.</p></div>
+</div></section>
+
+<section class="section"><span class="eyebrow">Notre méthode</span><h2>Du besoin identifié à l'aide distribuée.</h2>
+<div class="cards">
+<div class="card"><div class="icon">01</div><h3>Identifier</h3><p>Comprendre les besoins des personnes et des familles concernées par chaque projet.</p></div>
+<div class="card"><div class="icon">02</div><h3>Préparer</h3><p>Définir l'aide, les quantités et les ressources nécessaires avant l'action.</p></div>
+<div class="card"><div class="icon">03</div><h3>Agir</h3><p>Mettre en œuvre la distribution ou la remise de l'équipement au Pakistan.</p></div>
+<div class="card"><div class="icon">04</div><h3>Documenter</h3><p>Conserver les éléments permettant de présenter l'action et son déroulement.</p></div>
+<div class="card"><div class="icon">05</div><h3>Partager</h3><p>Publier progressivement des nouvelles, photos ou vidéos lorsque cela est approprié.</p></div>
+<div class="card"><div class="icon">06</div><h3>Mesurer</h3><p>Présenter les projets réalisés et les résultats de façon compréhensible.</p></div>
+</div></section>
+
+<section class="band"><div class="band-inner"><div><span class="eyebrow" style="color:#ffd36a">Chaque projet compte</span><h2>Vous pouvez soutenir une action précise ou contribuer librement.</h2><p>Les dons permettent de financer les projets de l'association en fonction des besoins et des priorités identifiés.</p><a class="btn" style="background:#fff;color:#17131b" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">FAIRE UN DON</a></div><div class="impact-card"><div class="big">❤️</div><h3>Merci pour votre confiance.</h3><p>Chaque soutien contribue à faire vivre les actions solidaires de Sheryam Foundation.</p></div></div></section>
+
+<section class="transparency"><div class="section"><span class="eyebrow">Transparence</span><h2>Voir ce que votre soutien permet.</h2><p class="sub">Nous souhaitons documenter les actions de manière respectueuse : projets, distributions, équipements remis et résultats sur le terrain.</p>
+<div class="proof"><div><b>📍 Terrain</b><p>Des actions menées au Pakistan selon les besoins identifiés et les projets de l'association.</p></div><div><b>📸 Preuves</b><p>Les photos et contenus des actions pourront être publiés au fil des projets, dans le respect des personnes aidées.</p></div><div><b>📊 Impact</b><p>Un suivi des actions et des objectifs pour rendre les résultats plus lisibles.</p></div></div></div></section>
+
+<section class="section"><div class="contact"><div><span class="eyebrow">Qui sommes-nous ?</span><h2>Sheryam Foundation</h2><p class="sub">Sheryam Foundation est une association engagée dans des actions humanitaires et solidaires en faveur de personnes en situation de précarité, avec une attention particulière portée aux enfants défavorisés et aux familles ayant besoin d'un soutien essentiel.</p><p class="sub">Nos actions comprennent notamment l'aide alimentaire, l'aide sociale et éducative, l'aide médicale, les équipements de mobilité, les projets d'autonomie et les interventions d'urgence au Pakistan.</p></div><div class="contactbox"><h3>Informations officielles</h3><p style="color:#eee">Association déclarée<br>RNA : W953014354<br>SIREN : 109065722<br>SIRET : 10906572200018<br>Siège social : 9 rue du Président Wilson, 95620 Parmain, France</p></div></div></section>
+
+<section class="section" id="contact"><div class="contact"><div><span class="eyebrow">Sheryam Foundation</span><h2>Ensemble, transformons la solidarité en actions.</h2><p class="sub">Merci à toutes les personnes qui choisissent de soutenir nos projets et de faire vivre cette initiative.</p><a class="btn btn-red" href="https://www.helloasso.com/associations/sheryam-foundation/formulaires/1" target="_blank">❤️ FAIRE UN DON</a></div>
+<div class="contactbox"><h3>Nous contacter</h3><a href="mailto:sheryamfoundation@gmail.com">✉️ sheryamfoundation@gmail.com</a><a href="https://www.instagram.com/sheryamfondation/" target="_blank">◎ Instagram · Sheryam Foundation</a><a href="https://www.facebook.com/" target="_blank">f Facebook · Sheryam Sheryam</a><p style="margin-top:22px;color:#cfc5cc">Association déclarée · SIREN 109065722 · SIRET 10906572200018<br>9 rue du Président Wilson, 95620 Parmain, France</p></div></div></section>
+
+<footer class="legal"><div class="footergrid"><div><strong>SHERYAM FOUNDATION</strong><br>Solidarité & actions humanitaires au Pakistan.</div><div>© 2026 Sheryam Foundation · Tous droits réservés</div></div></footer>
+</body></html>
