@@ -112,31 +112,28 @@ h1{font-size:clamp(44px,7vw,78px);line-height:.98;margin:18px 0 18px;letter-spac
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const openBtn = document.getElementById('openHaOverlay');
-  const openTopBtn = document.getElementById('openHaOverlayTop');
-  const openHeroBtn = document.getElementById('openHaOverlayHero');
   const modal = document.getElementById('haWidgetModal');
   const closeBtn = document.getElementById('closeHaWidgetBtn');
 
-  openBtn.addEventListener('click', function() {
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-});
+  const openButtons = [
+    document.getElementById('openHaOverlay'),
+    document.getElementById('openHaOverlayTop'),
+    document.getElementById('openHaOverlayHero')
+  ];
 
-openTopBtn.addEventListener('click', function() {
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-});
+  openButtons.forEach(function(button) {
+    if (button) {
+      button.addEventListener('click', function() {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      });
+    }
+  });
 
-openHeroBtn.addEventListener('click', function() {
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-});
-
-closeBtn.addEventListener('click', function() {
-  modal.style.display = 'none';
-  document.body.style.overflow = '';
-});
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  });
 });
 </script>
 </body>
