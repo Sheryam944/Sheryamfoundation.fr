@@ -118,9 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeBtn = document.getElementById('closeHaWidgetBtn');
 
   openBtn.addEventListener('click', function() {
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  });
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
+
+openTopBtn.addEventListener('click', function() {
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
 
   closeBtn.addEventListener('click', function() {
     modal.style.display = 'none';
