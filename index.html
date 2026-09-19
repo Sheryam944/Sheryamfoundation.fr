@@ -128,12 +128,16 @@ openTopBtn.addEventListener('click', function() {
   document.body.style.overflow = 'hidden';
 });
 
-  closeBtn.addEventListener('click', function() {
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-  });
+openHeroBtn.addEventListener('click', function() {
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+});
 });
 </script>
-
 </body>
 </html>
