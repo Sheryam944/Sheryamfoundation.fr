@@ -330,7 +330,35 @@ h1{
     transform:scaleX(1);
   }
 }
+.hero-visual{
+  position:relative;
+  min-height:500px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}.hero-visual-card{
+  width:min(440px,100%);
+  min-height:420px;
+  padding:28px;
+  border-radius:32px;
+  background:linear-gradient(145deg,#17131b,#2b2028);
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 30px 70px rgba(23,19,27,.28);
+  border:1px solid rgba(255,255,255,.12);
+}
 
+.hero-visual-card:before{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  right:-90px;
+  top:-100px;
+  background:rgba(255,200,61,.16);
+}
 .section{
   padding:68px 6%;
   max-width:1200px;
